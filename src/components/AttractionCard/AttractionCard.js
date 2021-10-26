@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./AttractionCard.scss";
 import favouriteIcon from "../../assets/icons/favourite-filled.png";
 import unfavouriteIcon from "../../assets/icons/favourite-outlined.png";

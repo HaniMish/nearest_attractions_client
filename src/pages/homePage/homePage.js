@@ -20,8 +20,6 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(function HomePage(props) {
-  const [lat, setLat] = useState(null);
-  const [lng, setLng] = useState(null);
   const [status, setStatus] = useState(null);
   const [nearestAttractionsBtn, setNearestAttractionsBtn] = useState(false);
   const { myLocation, setLoc } = props;
@@ -34,7 +32,6 @@ export default connect(
       navigator.geolocation.getCurrentPosition(
         (position) => {
           setStatus(null);
-
           setLoc({ x: position.coords.latitude, y: position.coords.longitude });
           setNearestAttractionsBtn(true);
         },
@@ -53,15 +50,16 @@ export default connect(
       <button className="button" onClick={getLocation}>
         הצג מיקום
       </button>
-      <div className="home-location">
+      {status && (<div className="home-status">{status}</div>)}
+      {!status &&(<div className="home-location">
         מיקומך הנוכחי:
         <span className="home-location-line">Y: {myLocation.y}</span>,
         <span className="home-location-line">X: {myLocation.x}</span>
-      </div>
+      </div>)}
       {nearestAttractionsBtn && (
         <NearestAttractionsBtn lat={myLocation.x} lng={myLocation.y} />
       )}
-      {/* <button onClick={<NearestAttractionsBtn/>}>Nearest Attractions</button> */}
+
     </div>
   );
 });

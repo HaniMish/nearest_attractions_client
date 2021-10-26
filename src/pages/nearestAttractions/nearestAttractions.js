@@ -18,7 +18,7 @@ export default function NearestAttractions(props) {
     setFavs(id)
   }*/
 
-  useEffect(() => {
+  useEffect((props) => {
     setLocation(props.location.state);
     fetch("http://localhost:8080/api/attractions")
       .then((res) => res.json())
@@ -34,6 +34,7 @@ export default function NearestAttractions(props) {
         }
       );
   }, []);
+
   if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
