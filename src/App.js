@@ -1,20 +1,19 @@
-import './App.scss';
-import React, { Component } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import NavBar from "./components/navbar/navbar.js";
+import { Route } from 'react-router';
+import Header from './components/header/header';
+import HomePage from './pages/homePage/homePage';
+import NearestAttractions from './pages/nearestAttractions/nearestAttractions';
 
-class App extends Component {
-  render() {
-    return (
+function App() {
+  return (
+    <>
+      <Header />
       <Router>
-        <div className="App">
-          <header className="App-header">
-            <NavBar/>
-          </header>
-        </div>
+        <Route exact component={HomePage} path="/" />
+        <Route exact component={NearestAttractions} path="/attractions" />
       </Router>
-    );
-  }
+    </>
+  );
 }
 
 export default App;

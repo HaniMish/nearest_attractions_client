@@ -2,7 +2,7 @@ import http from "../http-common";
 
 class AttractionsDataService {
   getAll() {
-    return http.get("/attractions");
+    return http.get("/api/attractions");
   }
 }
 
