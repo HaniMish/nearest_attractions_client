@@ -28,7 +28,7 @@ export default connect(
     if (!navigator.geolocation) {
       setStatus("Geolocation is not supported by your browser");
     } else {
-      setStatus("Locating...");
+      setStatus("המערכת מאתרת את מיקומך");
       navigator.geolocation.getCurrentPosition(
         (position) => {
           setStatus(null);

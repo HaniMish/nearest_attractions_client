@@ -3,6 +3,7 @@ import "./nearestAttractions.scss";
 import calculateDistance from "../../utils/calculateDistance";
 import CategoriesDropdown from "../../components/CategoriesDropdown/CategoriesDropdown";
 import AttractionCard from "../../components/AttractionCard/AttractionCard";
+import Loading from "../../components/Loading/Loading";
 
 // allAttractions.filter((item)=>{return item.type!=myType && item.dis<600})
 export default function NearestAttractions(props) {
@@ -18,7 +19,7 @@ export default function NearestAttractions(props) {
     setFavs(id)
   }*/
 
-  useEffect((props) => {
+  useEffect(() => {
     setLocation(props.location.state);
     fetch("http://localhost:8080/api/attractions")
       .then((res) => res.json())
@@ -38,7 +39,7 @@ export default function NearestAttractions(props) {
   if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
-    return <div>Loading...</div>;
+    return <Loading/>;
   } else {
     items.forEach((element) => {
       let distance = calculateDistance(
