@@ -21,7 +21,7 @@ export default function NearestAttractions(props) {
 
   useEffect(() => {
     setLocation(props.location.state);
-    fetch("http://localhost:8080/api/attractions")
+    fetch("https://nearest-attraction.herokuapp.com/api/attractions")
       .then((res) => res.json())
       .then(
         (result) => {
