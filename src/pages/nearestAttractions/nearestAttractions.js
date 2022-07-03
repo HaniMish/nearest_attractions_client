@@ -18,8 +18,9 @@ export default function NearestAttractions(props) {
   /*const setFavourite = (id) => {
     setFavs(id)
   }*/
-
+// eslint-disable
   useEffect(() => {
+    // eslint-disable-next-line
     setLocation(props.location.state);
     fetch("https://nearest-attraction.herokuapp.com/api/attractions")
       .then((res) => res.json())
