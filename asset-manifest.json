@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/HaniMish/nearest_attractions_client/static/css/main.eef5d2e3.chunk.css",
+    "main.js": "/HaniMish/nearest_attractions_client/static/js/main.86a7b78f.chunk.js",
+    "main.js.map": "/HaniMish/nearest_attractions_client/static/js/main.86a7b78f.chunk.js.map",
+    "runtime-main.js": "/HaniMish/nearest_attractions_client/static/js/runtime-main.df3911aa.js",
+    "runtime-main.js.map": "/HaniMish/nearest_attractions_client/static/js/runtime-main.df3911aa.js.map",
+    "static/js/2.58effd86.chunk.js": "/HaniMish/nearest_attractions_client/static/js/2.58effd86.chunk.js",
+    "static/js/2.58effd86.chunk.js.map": "/HaniMish/nearest_attractions_client/static/js/2.58effd86.chunk.js.map",
+    "static/js/3.4d7573f5.chunk.js": "/HaniMish/nearest_attractions_client/static/js/3.4d7573f5.chunk.js",
+    "static/js/3.4d7573f5.chunk.js.map": "/HaniMish/nearest_attractions_client/static/js/3.4d7573f5.chunk.js.map",
+    "index.html": "/HaniMish/nearest_attractions_client/index.html",
+    "static/css/main.eef5d2e3.chunk.css.map": "/HaniMish/nearest_attractions_client/static/css/main.eef5d2e3.chunk.css.map",
+    "static/js/2.58effd86.chunk.js.LICENSE.txt": "/HaniMish/nearest_attractions_client/static/js/2.58effd86.chunk.js.LICENSE.txt",
+    "static/media/favorite.76660b69.svg": "/HaniMish/nearest_attractions_client/static/media/favorite.76660b69.svg",
+    "static/media/logo.72aced23.png": "/HaniMish/nearest_attractions_client/static/media/logo.72aced23.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.df3911aa.js",
+    "static/js/2.58effd86.chunk.js",
+    "static/css/main.eef5d2e3.chunk.css",
+    "static/js/main.86a7b78f.chunk.js"
+  ]
+}
